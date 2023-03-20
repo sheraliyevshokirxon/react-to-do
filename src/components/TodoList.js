@@ -7,7 +7,7 @@ function TodoList({ data, updateData, deleteItem }) {
       {data &&
         data.map((todo) => {
           return (
-            <li className="list-item">
+            <li className="list-item" key={todo.id}>
               <div
                 className="item-text"
                 onClick={() => {
